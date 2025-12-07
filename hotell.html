@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Horský Sen</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/hotell.css" />
+    <link rel="stylesheet" href="css/restaurant.css" />
+    <link rel="stylesheet" href="css/reviews.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <div class="logo">
+            <a href="index.html" class="logo-link"
+              ><img src="./images/icons/logo8.png" alt="Logo hotela"
+            /></a>
+          </div>
+
+          <!-- Burger button -->
+          <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="nav-links" id="nav-links">
+            <div class="nav-item">
+              <a href="index.html" class="nav-link">Hlavna</a>
+            </div>
+            <div class="nav-item">
+              <a href="hotell.html" class="nav-link">Hotel</a>
+              <a href="#" class="call-button">
+                <i class="fas fa-phone"></i> Zavolať
+              </a>
+            </div>
+            <div class="nav-item">
+              <a href="restaurant.html" class="nav-link">Reštaurácia</a>
+              <a href="#" class="call-button">
+                <i class="fas fa-phone"></i> Zavolať
+              </a>
+            </div>
+            <div class="header__social-icons">
+              <a
+                href="https://wa.me/421123456789"
+                target="_blank"
+                aria-label="WhatsApp"
+              >
+                <img src="images/icons/whatsapp.svg" alt="WhatsApp" />
+              </a>
+              <a
+                href="https://facebook.com/yourpage"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <img src="images/icons/facebook.svg" alt="Facebook" />
+              </a>
+              <a
+                href="https://www.tripadvisor.com/Profile/yourprofile"
+                target="_blank"
+                aria-label="Tripadvisor"
+                class="icon--circle"
+              >
+                <img src="images/icons/tripadvisor.svg" alt="Tripadvisor" />
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="content">
+      <!-- Section hero   -->
+      <section class="hero">
+        <div class="container">
+          <div class="picture-hero">
+            <div class="hero__text">
+              <h1>Horský Sen</h1>
+              <p>„Tam, kde hory šepkajú – váš sen začína.“</p>
+            </div>
+            <div class="hero-buttons">
+              <button class="hero-button">Rezervovať izbu</button>
+              <button class="hero-button">Rezervovať stôl</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Rooms -->
+      <section class="room-offer">
+        <div class="container room-offer-container">
+          <h2 class="title">Izby a ceny</h2>
+
+          <div class="offers-content">
+            <div class="offers-info">
+              <div class="offers-info-list">
+                <h3>Naše izby</h3>
+                <p>
+                  Ponúkame útulné a moderné izby pre pohodlný oddych. <br />V
+                  cene je zahrnuté bezplatné Wi-Fi, raňajky a denné upratovanie.
+                </p>
+                <ul class="services-list">
+                  <li>Parkovanie pre hostí</li>
+                  <li>Fitness centrum</li>
+                  <li>SPA zóna</li>
+                  <li>Izbová služba</li>
+                </ul>
+                <div class="check-time">
+                  <p>
+                    <strong><span class="time-item">Check-in:</span></strong> od
+                    14:00
+                  </p>
+                  <p>
+                    <strong><span class="time-item">Check-out:</span></strong>
+                    do 12:00
+                  </p>
+                </div>
+              </div>
+
+              <div class="guest-services">
+                <h3>Doplnkové služby</h3>
+                <ul class="services-list">
+                  <li>Transfer z letiska alebo vlakovej stanice</li>
+                  <li>Požičovňa bicyklov a lyží</li>
+                  <li>Organizované turistické výlety</li>
+                  <li>Wellness procedúry na objednávku</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="offers-rooms">
+              <h3 class="title">Ceny ubytovania a izieb</h3>
+
+              <div class="rooms-card">
+                <img src="images/rooms/izba1.png" alt="Rodinná izba" />
+                <h4>Rodinná izba</h4>
+                <p class="price">300 € / noc</p>
+              </div>
+
+              <div class="rooms-card">
+                <img src="images/rooms/izba2.png" alt="Pololuxusná izba" />
+                <h4>Pololuxus</h4>
+                <p class="price">180 € / noc</p>
+              </div>
+
+              <div class="rooms-card">
+                <img src="images/rooms/izba3.png" alt="Luxusná izba" />
+                <h4>Luxus</h4>
+                <p class="price">250 € / noc</p>
+              </div>
+
+              <div class="rooms-card">
+                <img src="images/rooms/izba4.png" alt="Štandardná izba" />
+                <h4>Štandard</h4>
+                <p class="price">120 € / noc</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Special offers -->
+      <section class="special-offers">
+        <div class="container">
+          <h2 class="title">Špeciálne balíčky</h2>
+          <div class="offers-cards">
+            <div class="offer-card offer-card-pobyt">
+              <h3>Romantický pobyt</h3>
+              <p>2 noci pre 2 osoby, romantická večera a vstup do wellness.</p>
+              <p class="price">od 350 €</p>
+              <a href="#" class="btn">Rezervovať teraz</a>
+            </div>
+
+            <div class="offer-card offer-card-víkend">
+              <h3>Wellness víkend</h3>
+              <p>Neobmedzený vstup do SPA, masáž a raňajky v cene.</p>
+              <p class="price">od 280 €</p>
+              <a href="#" class="btn">Rezervovať teraz</a>
+            </div>
+
+            <div class="offer-card offer-card-balík">
+              <h3>Rodinný balík</h3>
+              <p>3 noci pre rodinu, zľava na lyžiarske permanentky.</p>
+              <p class="price">od 500 €</p>
+              <a href="#" class="btn">Rezervovať teraz</a>
+            </div>
+
+            <div class="offer-card offer-card-lyziarsky">
+              <h3>Lyžiarsky balík</h3>
+              <p>Ubytovanie na 3 noci, skipassy a relax v saune po lyžovaní.</p>
+              <p class="price">od 420 €</p>
+              <a href="#" class="btn">Rezervovať teraz</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section FAQ -->
+      <section class="faq">
+        <div class="container">
+          <h2 class="title faq-title">Často kladené otázky</h2>
+
+          <div class="faq-item">
+            <button class="faq-question">Od koľkej je možný check-in?</button>
+            <div class="faq-answer">
+              <p>Check-in je od 14:00, check-out do 12:00.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Môžem prísť so psom?</button>
+            <div class="faq-answer">
+              <p>
+                Áno, ubytovanie s domácimi zvieratami je možné za príplatok.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Je parkovanie v cene?</button>
+            <div class="faq-answer">
+              <p>Áno, parkovanie pre hostí je bezplatné.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Sú v cene raňajky?</button>
+            <div class="faq-answer">
+              <p>Áno, raňajky sú zahrnuté vo všetkých balíčkoch.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>2025 Hotel Horský Sen — Všetky práva vyhradené</p>
+          <p>
+            Sledujte nás:
+            <a
+              href="https://facebook.com/yourpage"
+              target="_blank"
+              rel="noopener"
+              >Facebook</a
+            >
+            |
+            <a
+              href="https://instagram.com/yourpage"
+              target="_blank"
+              rel="noopener"
+              >Instagram</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <button id="scrollToTopBtn" title="Späť hore">↑</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/restaurant.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>

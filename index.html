@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horský Sen</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/hotell.css" />
+    <link rel="stylesheet" href="css/restaurant.css" />
+    <link rel="stylesheet" href="css/reviews.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <div class="logo">
+            <a href="index.html" class="logo-link"
+              ><img src="./images/icons/logo8.png" alt="Logo hotela"
+            /></a>
+          </div>
+
+          <!-- Burger button -->
+          <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="nav-links" id="nav-links">
+            <div class="nav-item">
+              <a href="index.html" class="nav-link">Hlavna</a>
+            </div>
+            <div class="nav-item">
+              <a href="hotell.html" class="nav-link">Hotel</a>
+              <a href="#" class="call-button">
+                <i class="fas fa-phone"></i> Zavolať
+              </a>
+            </div>
+            <div class="nav-item">
+              <a href="restaurant.html" class="nav-link">Reštaurácia</a>
+              <a href="#" class="call-button">
+                <i class="fas fa-phone"></i> Zavolať
+              </a>
+            </div>
+            <div class="header__social-icons">
+              <a
+                href="https://wa.me/421123456789"
+                target="_blank"
+                aria-label="WhatsApp"
+              >
+                <img src="images/icons/whatsapp.svg" alt="WhatsApp" />
+              </a>
+              <a
+                href="https://facebook.com/yourpage"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <img src="images/icons/facebook.svg" alt="Facebook" />
+              </a>
+              <a
+                href="https://www.tripadvisor.com/Profile/yourprofile"
+                target="_blank"
+                aria-label="Tripadvisor"
+                class="icon--circle"
+              >
+                <img src="images/icons/tripadvisor.svg" alt="Tripadvisor" />
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Section hero   -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <div class="hero__text">
+              <h1>Horský Sen</h1>
+              <p>„Tam, kde hory šepkajú - váš sen začína.“</p>
+            </div>
+            <div class="hero-buttons">
+              <button class="hero-button">Rezervovať izbu</button>
+              <button class="hero-button">Rezervovať stôl</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section about -->
+      <section class="about">
+        <div class="container">
+          <div class="about__block">
+            <div class="about__text">
+              <h2 class="title">O našom hoteli "Horský Sen".</h2>
+              <p>
+                "Horský Sen" sa nachádza v samotnom srdci krásnych slovenských
+                hôr, kde sa harmónia prírody spája s pohodlím moderného
+                ubytovania.
+              </p>
+              <p>
+                V našom hoteli vás čaká útulné ubytovanie, príjemná atmosféra a
+                servis, ktorý dbá na každý detail.
+              </p>
+              <p>
+                Každá izba je starostlivo pripravená tak, aby ste sa cítili ako
+                doma: čistota, pokoj a všetko potrebné pre skutočný oddych.
+              </p>
+              <p>Vaše pohodlie a spokojnosť sú našou najvyššou prioritou.</p>
+            </div>
+            <div class="about__image">
+              <img src="./images/about/hala1.png" alt="Hala" />
+            </div>
+          </div>
+
+          <div class="about__block about__block--reverse">
+            <div class="about__image">
+              <img src="./images/about/hala.png" alt="Hala 1" />
+            </div>
+            <div class="about__text about__hala">
+              <h2 class="title">Ste u nás vždy vítaní.</h2>
+              <p>
+                V "Horský Sen" vás čaká výnimočná kuchyňa, kde sa tradičné jedlá
+                pripravujú z tých najlepších miestnych surovín.
+              </p>
+              <p>
+                Náš reštauračný priestor spája chuť s pohodlím, a každé jedlo
+                nesie v sebe kúsok domácej tradície.
+              </p>
+              <p>
+                Pre dokonalý oddych ponúkame SPA zónu, saunu a relax v objatí
+                prírody.
+              </p>
+              <p>
+                Nezabudnuteľné výhľady vás očaria hneď po príchode — je to
+                miesto, kde duša nájde pokoj.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section features -->
+      <section class="features">
+        <div class="container">
+          <h2 class="title features-title">
+            Všetko, čo milujete — na jednom mieste
+          </h2>
+          <div class="features-content">
+            <article class="feature">
+              <i class="fas fa-map-marker-alt icon" aria-hidden="true"></i>
+              <h3>Poloha</h3>
+              <p>
+                V samotnom srdci prírody — tam, kde ranné slnko hladí horské
+                štíty a chodníky vedú k dobrodružstvám. Lyže, prechádzky, pokoj
+                — všetko len pár krokov od vás.
+              </p>
+            </article>
+
+            <article class="feature">
+              <i class="fas fa-map-marker-alt icon" aria-hidden="true"></i>
+              <h3>Komfort</h3>
+              <p>
+                Obklopené horami, moderné izby s panoramatickým výhľadom,
+                wellness pod hviezdami a sauna, kde sa čas spomalí. Relaxácia a
+                pohodlie sú tak blízko.
+              </p>
+            </article>
+
+            <article class="feature">
+              <i class="fas fa-map-marker-alt icon" aria-hidden="true"></i>
+              <h3>Kuchyňa</h3>
+              <p>
+                Raňajky, ktoré voňajú domovom. Tradičné chute, lokálne dobroty a
+                porcia lásky v každom jedle. Tu sa neje — tu sa vychutnáva.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Contacts -->
+      <section class="contact">
+        <div class="container">
+          <h2 class="title contact-title">Napíšte nám alebo zavolajte</h2>
+
+          <div class="contact-content">
+            <div class="contact-block">
+              <aside class="contact-inform">
+                <ul class="contact-list">
+                  <li><strong>Ulica Gaiusova</strong></li>
+                  <li><strong>Banská Bystrica</strong></li>
+                </ul>
+              </aside>
+              <address class="contact-adresa">
+                <ul class="contact-list">
+                  <li><strong>Hotel:</strong> +xxx(xx) xxx xx xx</li>
+                  <li><strong>Reštaurácia:</strong> +xxx(xx) xxx xx xx</li>
+                  <li><strong>SPA centrum:</strong> +xxx(xx) xxx xx xx</li>
+                  <li class="contact-mail">
+                    <a href="mailto:info@horsky-sen.sk">info@horsky-sen.sk</a>
+                  </li>
+                </ul>
+                <div class="contact-hovor">
+                  <a href="#" class="request-call-btn">
+                    <i class="fas fa-bell" aria-hidden="true"></i> Objednať
+                    hovor
+                  </a>
+                </div>
+              </address>
+            </div>
+            <article class="contact-text">
+              <form class="kontakt-formular" action="odoslat.php" method="post">
+                <div class="formular-radek dvojica">
+                  <input type="text" name="meno" placeholder="Meno" required />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email (nepovinné)"
+                  />
+                </div>
+                <div class="formular-radek">
+                  <input
+                    type="tel"
+                    name="telefon"
+                    placeholder="Telefónne číslo"
+                    required
+                  />
+                </div>
+                <div class="formular-radek">
+                  <textarea
+                    name="sprava"
+                    placeholder="Vaša správa"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit">
+                  <i class="fas fa-arrow-right" aria-hidden="true"></i> Odoslať
+                </button>
+              </form>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section guestbook -->
+      <section class="guestbook">
+        <div class="container">
+          <header class="guestbook-title">
+            <h2 class="title">Recenzie hostí</h2>
+            <p aria-live="guestbook-text">
+              Celkom: 124 recenzií (priemer: ⭐ 4.7 / 5)
+            </p>
+          </header>
+
+          <ul class="guestbook-group">
+            <li class="guestbook-card">
+              <article>
+                <header class="guestbook-header">
+                  <img
+                    src="./images/guestbook/book.png"
+                    alt="Fotografia Anny K."
+                  />
+                  <h3>Anna K.</h3>
+                </header>
+                <div class="stars" role="img" aria-label="5 z 5 hviezdičiek">
+                  ★★★★★
+                </div>
+                <p>„Nádherné miesto, výborné jedlo a veľmi milý personál.“</p>
+              </article>
+            </li>
+
+            <li class="guestbook-card">
+              <article>
+                <header class="guestbook-header">
+                  <img
+                    src="./images/guestbook/book1.png"
+                    alt="Fotografia Petra M."
+                  />
+                  <h3>Peter M.</h3>
+                </header>
+                <div class="stars" role="img" aria-label="4 z 5 hviezdičiek">
+                  ★★★★☆
+                </div>
+                <p>
+                  „Izby sú čisté, výhľad na hory je úžasný. Wellness bol top!“
+                </p>
+              </article>
+            </li>
+
+            <li class="guestbook-card">
+              <article>
+                <header class="guestbook-header">
+                  <img
+                    src="./images/guestbook/book2.png"
+                    alt="Fotografia Lucie B."
+                  />
+                  <h3>Lucia B.</h3>
+                </header>
+                <div class="stars" role="img" aria-label="5 z 5 hviezdičiek">
+                  ★★★★★
+                </div>
+                <p>„Skvelá poloha, tiché prostredie, ideálne na oddych.“</p>
+              </article>
+            </li>
+          </ul>
+
+          <div class="guestbook-actions">
+            <a href="/reviews .html" class="btn">Zobraziť všetky recenzie</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p class="footer-text">2025 Horský Sen — Všetky práva vyhradené</p>
+          <p>
+            Sledujte nás:
+            <a
+              href="https://facebook.com/yourpage"
+              target="_blank"
+              rel="noopener"
+              >Facebook</a
+            >
+            |
+            <a
+              href="https://instagram.com/yourpage"
+              target="_blank"
+              rel="noopener"
+              >Instagram</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <button id="scrollToTopBtn" title="Späť hore">↑</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/restaurant.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>

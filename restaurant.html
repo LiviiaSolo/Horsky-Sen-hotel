@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Horský Sen</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/hotell.css" />
+    <link rel="stylesheet" href="css/restaurant.css" />
+    <link rel="stylesheet" href="css/reviews.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <div class="logo">
+            <a href="index.html" class="logo-link"
+              ><img src="./images/icons/logo8.png" alt="Logo hotela"
+            /></a>
+          </div>
+
+          <!-- Burger button -->
+          <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="nav-links" id="nav-links">
+            <div class="nav-item">
+              <a href="index.html" class="nav-link">Hlavna</a>
+            </div>
+            <div class="nav-item">
+              <a href="hotell.html" class="nav-link">Hotel</a>
+              <a href="#" class="call-button">
+                <i class="fas fa-phone"></i> Zavolať
+              </a>
+            </div>
+            <div class="nav-item">
+              <a href="restaurant.html" class="nav-link">Reštaurácia</a>
+              <a href="#" class="call-button">
+                <i class="fas fa-phone"></i> Zavolať
+              </a>
+            </div>
+            <div class="header__social-icons">
+              <a
+                href="https://wa.me/421123456789"
+                target="_blank"
+                aria-label="WhatsApp"
+              >
+                <img src="images/icons/whatsapp.svg" alt="WhatsApp" />
+              </a>
+              <a
+                href="https://facebook.com/yourpage"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <img src="images/icons/facebook.svg" alt="Facebook" />
+              </a>
+              <a
+                href="https://www.tripadvisor.com/Profile/yourprofile"
+                target="_blank"
+                aria-label="Tripadvisor"
+                class="icon--circle"
+              >
+                <img src="images/icons/tripadvisor.svg" alt="Tripadvisor" />
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="content">
+      <!-- Section hero -->
+      <section class="hero">
+        <div class="container">
+          <div class="picture-hero">
+            <div class="hero__text">
+              <h1>Horský Sen</h1>
+              <p>„Tam, kde hory šepkajú – váš sen začína.“</p>
+            </div>
+            <div class="hero-buttons">
+              <button class="hero-button">Rezervovať izbu</button>
+              <button class="hero-button">Rezervovať stôl</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section restaurant-about -->
+      <section class="restaurant-about" id="restaurant-about">
+        <div class="container restaurant-about__container">
+          <div class="restaurant-about__text">
+            <h2 class="title">About the restaurant</h2>
+            <p>
+              Naša reštaurácia je eleganciou v každom detaile a oslavou chutí v
+              každom jedle. Ponorte sa do atmosféry šarmu.
+            </p>
+            <p>
+              Naši čašníci sú skutoční odborníci. Dokonale poznajú naše menu,
+              citlivo vnímajú chute hostí a vždy odporučia ideálne jedlo.
+              Pravidelní návštevníci oceňujú ich pozornosť a osobný prístup.
+            </p>
+            <p>
+              Útulná kaviareň na prízemí je ideálnym miestom na chvíľku oddychu.
+              Vychutnajte si šálku voňavej kávy s ručne vyrábanými dezertmi od
+              nášho miestneho cukrára a nechajte sa rozmaznávať chuťami, ktoré
+              vám zlepšia náladu a dodajú energiu na celý deň.
+            </p>
+          </div>
+          <div class="restaurant-about__img">
+            <img src="images/restoran.JPG" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Menu -->
+      <section class="wrap" id="menuApp">
+        <div class="container">
+          <div class="menu-header">
+            <div class="menu-title">
+              <h1>Naše menu</h1>
+              <p class="lead">
+                Čerstvé suroviny, sezónne chute a originálne jedlá
+              </p>
+            </div>
+            <div class="filters">
+              <div class="search">
+                <input
+                  id="search"
+                  type="search"
+                  placeholder="Hľadať... (napr. carbonara)"
+                />
+              </div>
+              <div class="badge">🔥 Hit: Pasta Carbonara</div>
+            </div>
+          </div>
+
+          <div
+            class="categories"
+            role="tablist"
+            aria-label="Kategórie menu"
+            id="categories"
+          ></div>
+
+          <section id="menuGrid" class="grid" aria-live="polite"></section>
+
+          <div
+            id="modalBackdrop"
+            class="modal-backdrop"
+            role="dialog"
+            aria-modal="true"
+            aria-hidden="true"
+          >
+            <div class="modal" role="document">
+              <button class="close" id="modalClose">✕</button>
+              <h2 id="modalTitle">Názov jedla</h2>
+              <p id="modalDesc" class="muted">Popis</p>
+              <img id="modalImg" alt="Foto jedla" />
+              <p id="modalExtra" class="muted" style="margin-top: 12px">
+                Hmotnosť • Kalórie • Ingrediencie
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>2025 Hotel Horský Sen — Všetky práva vyhradené</p>
+          <p>
+            Sledujte nás:
+            <a
+              href="https://facebook.com/yourpage"
+              target="_blank"
+              rel="noopener"
+              >Facebook</a
+            >
+            |
+            <a
+              href="https://instagram.com/yourpage"
+              target="_blank"
+              rel="noopener"
+              >Instagram</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <button id="scrollToTopBtn" title="Späť hore">↑</button>
+
+    <!-- JS for Tabs -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const tabs = document.querySelectorAll(".tabs__item");
+        const sliders = document.querySelectorAll(".menu__slider-block");
+
+        tabs.forEach((tab, index) => {
+          tab.addEventListener("click", () => {
+            tabs.forEach((t) => t.classList.remove("active"));
+            tab.classList.add("active");
+
+            sliders.forEach((s) => s.classList.remove("show"));
+            sliders[index].classList.add("show");
+          });
+        });
+      });
+    </script>
+    <script src="js/restaurant.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
